@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyTimes</string>
+    <string name="title_activity_article">MyTimes</string>
+    <string name="iv_card_content_description_image">Image of the news response</string>
+    <string name="collasping_image">Collasping Image</string>
+    <string name="toolbar_default_text">Google News India</string>
+    <string name="read_the_full_article">Read the full article</string>
+
+</resources>
