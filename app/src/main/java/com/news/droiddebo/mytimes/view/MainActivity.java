@@ -77,9 +77,6 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        AssetManager assetManager = this.getApplicationContext().getAssets();
-//        montserrat_regular = Typeface.createFromAsset(assetManager, "fonts/Montserrat-Regular.ttf");
-
         createToolbar();
         createRecyclerView();
 
@@ -362,29 +359,6 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        switch (item.getItemId()) {
-
-            case R.id.action_search:
-                openSearchActivity();
-                break;
-            default:
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-
-
-
-    private void openSearchActivity() {
-        Intent searchIntent = new Intent(this, SearchActivity.class);
-        startActivity(searchIntent);
-        this.overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
-    }
-
 
 
     public void onBackPressed() {

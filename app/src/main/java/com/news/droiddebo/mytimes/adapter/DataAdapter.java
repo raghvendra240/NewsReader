@@ -51,11 +51,11 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
     public void onBindViewHolder(DataAdapter.ViewHolder holder, int position) {
 
         String title = articles.get(position).getTitle();
-        if (title.endsWith("- Times of India")) {
-            title = title.replace("- Times of India", "");
-        } else if(title.endsWith(" - Firstpost")) {
-            title = title.replace(" - Firstpost", "");
-        }
+//        if (title.endsWith("- Times of India")) {
+//            title = title.replace("- Times of India", "");
+//        } else if(title.endsWith(" - Firstpost")) {
+//            title = title.replace(" - Firstpost", "");
+//        }
 
         holder.tv_card_main_title.setText(title);
 
@@ -104,11 +104,11 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         @Override
         public void onClick(View v) {
             String headLine = articles.get(getAdapterPosition()).getTitle();
-            if (headLine.endsWith(" - Times of India")) {
-                headLine = headLine.replace(" - Times of India", "");
-            } else if(headLine.endsWith(" - Firstpost")) {
-                headLine = headLine.replace(" - Firstpost", "");
-            }
+//            if (headLine.endsWith(" - Times of India")) {
+//                headLine = headLine.replace(" - Times of India", "");
+//            } else if(headLine.endsWith(" - Firstpost")) {
+//                headLine = headLine.replace(" - Firstpost", "");
+//            }
             String description = articles.get(getAdapterPosition()).getDescription();
             String date = articles.get(getAdapterPosition()).getPublishedAt();
             String imgURL = articles.get(getAdapterPosition()).getUrlToImage();
